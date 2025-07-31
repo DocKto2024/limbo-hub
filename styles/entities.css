@@ -1,0 +1,82 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #f1f1f1;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Backrooms Theme */
+.backrooms-theme {
+    background-color: #121212;
+}
+
+.creature-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.creature-header {
+    margin-bottom: 20px;
+}
+
+.creature-name {
+    font-size: 2.5em;
+    color: #f1f1f1;
+}
+
+.community-nicknames {
+    font-size: 1.2em;
+    color: #999;
+}
+
+/* Danger Level */
+.danger-level {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Sections */
+.creature-info {
+    margin-bottom: 30px;
+}
+
+.creature-description, .creature-behavior, .countermeasures, .creature-moveset, .creature-stats, .creature-locations, .creature-notes {
+    margin-bottom: 20px;
+}
+
+.creature-description p, .creature-behavior p, .creature-notes p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Countermeasures & Moveset */
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* Image Styling */
+.creature-image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
