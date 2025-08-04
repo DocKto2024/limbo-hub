@@ -3,32 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Shiv - Entity File</title>
-  <link rel="stylesheet" href="../styles/main.css" />
+  <title>Shiv - Entity File</title>
+  <link rel="stylesheet" href="../styles/main.css"/>
   <style>
-    .entity-description {
+    .creature-description {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
-      margin-top: 20px;
     }
-
-    .entity-image {
+    .creature-image {
       margin-left: 20px;
       max-width: 300px;
-      max-height: 400px;
+      max-height: 300px;
       object-fit: cover;
     }
-
-    .entity-info {
+    .creature-info {
       flex-grow: 1;
     }
   </style>
 </head>
 <body>
 
-  <div class="top-gif">
-    <img src="../assets/gifs/HUB_logo.gif" alt="Logo Animation" />
+    <div class="top-gif">
+      <img src="../assets/gifs/HUB_logo.gif" alt="Logo Animation" />
   </div>
 
   <div class="container">
@@ -45,61 +42,63 @@
     </header>
 
     <main>
-      <h2>The Butcher</h2>
-      <p><strong>Community Nickname:</strong> The Shiv</p>
+      <h2>Shiv</h2>
+      <div class="creature-description">
+        <div class="creature-info">
+          <p><strong>Community Nicknames:</strong> Shiv</p>
+          <p><strong>Danger Level:</strong> Cautious</p>
 
-      <div class="entity-description">
-        <div class="entity-info">
           <h3>Description</h3>
           <p>TBC</p>
+          <p>Spotlights are slow and cumbersome due to their size, but their persistent floodlights and long reach make them formidable when encountered in open spaces. Their most dangerous trait isn't necessarily their physical strength, but their ability to expose players to other entities, making hiding in darkness ineffective.</p>
 
           <h3>Behavior</h3>
-          <p>TBC<strong>Level 0</strong>.</p>
-          <h3>Combat Encounters</h3>
-          <p>TBC</p>
-
-          <h3>Abilities</h3>
-          <ul>
-            <li><strong>Sword Mastery (Muramasa):</strong> Skilled and fast attacks; heals on kill.</li>
-            <li><strong>Relentless Pursuit:</strong> Chases targets with unyielding determination.</li>
-            <li><strong>Mocking Laughter:</strong> Instills fear; can disorient survivors during chases.</li>
-            <li><strong>Lantern Bludgeon:</strong> Secondary weapon; can deliver devastating melee blows.</li>
-          </ul>
+          <p>Spotlights are commonly found patrolling dark areas, scanning the environment with their bright beams for any signs of players. Upon detecting a player, they will pause for a moment before beginning their pursuit, giving survivors a brief window to flee. If a player escapes their sight, Spotlights will check the surrounding areas methodically before moving on if they find no further trace.</p>
+          <p>Their ability to hear is hampered by the constant humming of their floodlights, meaning that survivors can often walk or even run out of their direct path without being detected. Their heavy, loud footsteps and the distinct humming sound give players an early warning of their presence.</p>
 
           <h3>Countermeasures</h3>
           <ul>
-            <li><strong>Noclip Escape:</strong> Most effective method of avoiding death.</li>
-            <li><strong>Avoid Open Levels:</strong> Don’t engage it in areas with no cover or escape routes.</li>
-            <li><strong>Coordinated Assault:</strong> Only way to kill it reliably. Avoid casualties that could trigger its healing.</li>
+            <li>Hide at a distance and avoid staying in its direct light cone.</li>
+            <li>Use small corridors and doors to force it to crouch and slow down.</li>
+            <li>Move behind or sideways during strikes to avoid damage.</li>
+            <li>Exploit its poor hearing to sneak or run away undetected.</li>
+            <li>Coordinate with others to flank it while it’s distracted.</li>
+            <li>Listen for humming and footsteps to determine approach or departure.</li>
+          </ul>
+
+          <h3>Moveset</h3>
+          <ul>
+            <li><strong>Strike:</strong> Slow but powerful hit from floodlight arm (50 damage unarmored).</li>
+            <li><strong>Crouch:</strong> Can enter smaller spaces, but moves significantly slower while crouching.</li>
           </ul>
 
           <h3>Statistics</h3>
           <ul>
-            <li><strong>Lethality:</strong> Extremely High</li>
-            <li><strong>Mobility:</strong> Fast and relentless</li>
-            <li><strong>Vitality:</strong> High (regenerates from kills)</li>
+            <li><strong>Lethality:</strong> 40–60 damage per hit. Avoidable, but light exposure draws others.</li>
+            <li><strong>Mobility:</strong> Slower than players. Cannot sprint, but has infinite stamina.</li>
+            <li><strong>Vitality:</strong> High health. Takes 14+ hits with low-tier weapons to kill. Best attacked in groups.</li>
           </ul>
 
-          <h3>Known Locations</h3>
+          <h3>Locations</h3>
           <ul>
-            <li><strong>Level 0 Sub-Regions:</strong> Extremely Rare sightings. There has only been 1 report on a Butcher being in Motel Depot.</li>
-            <li><strong>Brutalist Level:</strong> Frequent and dangerous encounters</li>
-            <li><strong>Brick Level:</strong> Frequent and dangerous encounters</li>
+            <li>Common on Level 0</li>
+            <li>Frequently seen near the Nest and the Moshpit</li>
           </ul>
 
           <h3>Notes</h3>
           <ul>
-            <li><strong>Muramasa’s Healing:</strong> Each kill restores The Butcher’s health. Prevent this at all costs.</li>
-            <li><strong>Death Message:</strong> TBA</li>
+            <li><strong>Death Message:</strong> "Evolved Lifeform"</li>
+            <li>Floodlights can be salvaged after death by interacting with bacterial wiring.</li>
+            <li>Can turn its floodlight-head to look around corners and upwards. Stay out of elevated or narrow view corridors.</li>
           </ul>
         </div>
-        <img src="../assets/images/butcher.png" alt="The Butcher" class="entity-image" />
+        <img src="../assets/images/spotlight.png" alt="Spotlight Entity" class="creature-image" />
       </div>
     </main>
 
     <footer>
       <p>© 1998 (2024) Limbo FERG HUB.</p>
-      <p>This is an unofficial fan wiki for Backrooms: Limbo. We are not affiliated with the developers of the game. All rights belong to their respective owners.</p>
+      <p>This is an unofficial fan wiki for Backrooms: Limbo. We are not affiliated with the developers of the game. All rights belong to their respective owners.<p></p>
     </footer>
   </div>
 </body>
