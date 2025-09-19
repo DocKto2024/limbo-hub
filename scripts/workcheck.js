@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("submitWord");
   const message = document.getElementById("mysteryMessage");
 
-  // Thing with word to enter swalla swalla
+  // Thing with word to enter
   const dictionary = {
     "meg": () => message.textContent = "Shard of the past.",
     "limbo": () => message.textContent = "Your new home.",
@@ -57,4 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
   input.addEventListener("keypress", (e) => {
     if (e.key === "Enter") checkWord();
   });
+
 });
