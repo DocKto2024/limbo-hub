@@ -1,4 +1,4 @@
-/* === GLOBAL === */
+/* ==================== GLOBAL ==================== */
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
@@ -21,7 +21,15 @@ a:hover {
   padding: 20px;
 }
 
-/* === HEADER === */
+main p {
+  line-height: 1.6;
+}
+
+main h2 {
+  color: #ff9800;
+}
+
+/* ==================== HEADER ==================== */
 header {
   border-bottom: 1px solid #333;
   padding-bottom: 10px;
@@ -43,16 +51,7 @@ nav a {
   font-weight: bold;
 }
 
-/* === MAIN === */
-main h2 {
-  color: #ff9800;
-}
-
-main p {
-  line-height: 1.6;
-}
-
-/* === FOOTER === */
+/* ==================== FOOTER ==================== */
 footer {
   border-top: 1px solid #333;
   margin-top: 30px;
@@ -61,7 +60,18 @@ footer {
   color: #777;
 }
 
-/* === LEVELS === */
+/* ==================== TOP GIF ==================== */
+.top-gif {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.top-gif img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* ==================== LEVELS ==================== */
 .level-list {
   list-style: none;
   padding: 0;
@@ -76,7 +86,33 @@ footer {
   color: #ffc107;
 }
 
-/* === LEVEL PAGE WITH IMAGE === */
+/* ==================== CLASSIFICATION ==================== */
+
+.classification-box {
+  border: 2px solid #444;
+  padding: 10px;
+  background: #f8f8f8;
+  margin: 15px 0;
+  font-family: "Courier New", monospace;
+}
+
+.classification-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.classification-box td {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.classification-box .risk-row td {
+  background: #ffe9e9;
+  font-weight: bold;
+  color: #b30000;
+}
+
+/* ==================== LEVEL PAGE WITH IMAGE ==================== */
 .level-page {
   display: flex;
   flex-direction: row;
@@ -92,13 +128,62 @@ footer {
 .image-column {
   flex: 1;
   max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0; /* предотвращаем сжатие */
 }
 
 .level-image {
   width: 100%;
+  display: block;
 }
 
-/* === ENTITIES === */
+/* ==================== JS IMAGE WRAPPER ==================== */
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffc107;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  background: rgba(0,0,0,0.6);
+  transition: opacity 0.4s ease;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-wrapper:hover img {
+  filter: blur(1px) brightness(0.9);
+  transform: scale(1.1);
+}
+
+.image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+/* ==================== ENTITIES ==================== */
 .entity-group {
   margin-bottom: 30px;
 }
@@ -117,8 +202,7 @@ footer {
   color: #ffc107;
 }
 
-
-/* === FACTIONS === */
+/* ==================== FACTIONS ==================== */
 .faction-group {
   margin-bottom: 30px;
 }
@@ -137,7 +221,7 @@ footer {
   color: #ffc107;
 }
 
-/* === MODAL === */
+/* ==================== MODAL ==================== */
 .modal {
   display: none;
   position: fixed;
@@ -173,13 +257,100 @@ footer {
   cursor: pointer;
 }
 
-/* === TOP GIF === */
-.top-gif {
-  text-align: center;
-  margin: 20px 0;
+/* ==================== MYSTERY BOX (FERG TERMINAL) ==================== */
+.mystery-box {
+  margin-top: 40px;
+  padding: 20px;
+  background: #0a0a0a;
+  border: 2px solid #111;
+  border-radius: 6px;
+  text-align: left;
+  font-family: "Courier New", monospace;
+  color: #0f0;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.2);
 }
 
-.top-gif img {
-  max-width: 150px;
-  height: auto;
+.mystery-box h3 {
+  color: #0f0;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+}
+
+.mystery-box input {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  background: #000;
+  color: #0f0;
+  width: 70%;
+}
+
+.mystery-box button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  background: #000;
+  color: #0f0;
+  border: 1px solid #0f0;
+  font-family: "Courier New", monospace;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mystery-box button:hover {
+  background: #001100;
+}
+
+#mysteryMessage {
+  margin-top: 15px;
+  font-size: 16px;
+  font-style: italic;
+  color: #0f0;
+  text-shadow: 0 0 6px rgba(0, 255, 0, 0.7);
+}
+
+/* мигающий курсор */
+.cursor {
+  display: inline-block;
+  width: 8px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* ==================== NEWS BOARD ==================== */
+.news-board {
+  margin-top: 50px;
+  padding: 20px;
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 10px;
+  font-family: "Courier New", monospace;
+  color: #e0e0e0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.news-board h3 {
+  margin-bottom: 15px;
+  color: #ffcc00;
+  text-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+}
+
+.news-board ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-board li {
+  margin-bottom: 12px;
+  padding-left: 5px;
+  border-left: 2px solid #555;
+}
+
+.news-board .date {
+  color: #ff5555;
+  margin-right: 10px;
 }
