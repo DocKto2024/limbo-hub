@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level ⌘ - Abyss</title>
+  <link rel="stylesheet" href="../styles/sub_besement.css" />
+</head>
+<script src="../scripts/imageoverlay.js"></script>
+<body>
+
+  <div class="banner">
+    <div class="banner-overlay">
+      <h1>[INFORMATION OMMITED]</h1>
+      <p>"[REACTION OMMITED]"</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>Limbo HUB</h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../levels.html">Levels</a>
+        <a href="../entities.html">Entities</a>
+        <a href="../factions.html">Factions</a>
+        <a href="../objects.html">Objects</a>
+        <a href="../phenomena.html">Phenomena and anomalies</a>
+      </nav>
+    </header>
+
+    <main class="level-page">
+      <div class="text-column">
+        <h2>Level ⌘ - "Sub Besement"</h2>
+        <p class="survival-class"><strong>Survival Difficulty:</strong> Class 4 — Unsafe | Very rare resources presence | Enigmatic life-forms present</p>
+
+        <section>
+          <h3>Description</h3>
+          <p>
+            Level ⌘, commonly known as <em>"INFORMATION OMMITED"</em> or <em>"Sub Besement"</em> within the survivor community, is a level with very chaotic infrastructure. Mannequins can be found around the level. The only known way get here is using pale key on level <a href="abyss.html">Abyss.</a>
+          </p>
+        </section>
+
+        <section>
+          <h3>Piano room</h3>
+          <p>
+          In the center of the room there is a piano with roots growing out of the ceiling playing a melody on the piano, the melody of the piano can be heard throughout the entire level.
+          </p>
+          <p>
+          Several chairs are placed around the room, there is also one door behind which there is a no-clip, passing through the no-clip leads to the main part of the level.
+          </p>
+        </section>
+
+        <section>
+          <h3>Paintings room</h3>
+          <p>
+          Not far from the exit, you can find a room covered with sheets of something similar to paper or fabric, with various patterns and symbols drawn on them, it is unknown who or what drew them and what they mean.
+          </p>
+        </section>
+
+        <section>
+          <h3>Resources</h3>
+          <ul>
+            <li><strong>Strange gear:</strong> Strange gas mask and strange chestplate can be found here.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Threats</h3>
+          <ul>
+            <li><strong>Hostile entities:</strong> Some of the enigmatics can be found here.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Exits</h3>
+          <p>
+            Goin through a no-clip lead back to <a href="abyss.html">Abyss.</a>
+          </p>
+        </section>
+
+        <section>
+          <h3>Additional Notes</h3>
+          <p>
+          High risk high reward area.
+          </p>
+          
+        </section>
+
+      </div>
+
+      <div class="image-column">
+        <img src="../assets/images/sub_besement1.png" alt="Architecture" class="level-image"/>
+        <img src="../assets/images/sub_besement2.png" alt="Dark hallway" class="level-image"/>
+        <img src="../assets/images/sub_besement3.png" alt="Paintings room" class="level-image"/>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 1998 (2024) Limbo FERG HUB.</p>
+      <p>This is an unofficial fan wiki for Backrooms: Limbo. We are not affiliated with the developers of the game. All rights belong to their respective owners.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
