@@ -5,26 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pale Key - Object Description</title>
   <link rel="stylesheet" href="../styles/main.css" />
-  <style>
-    .object-description {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      margin-top: 20px;
-    }
-
-    .object-image {
-      margin-left: 20px;
-      max-width: 300px;
-      max-height: 300px;
-      object-fit: cover;
-    }
-
-    .object-info {
-      flex-grow: 1;
-    }
-  </style>
 </head>
+<script src="../scripts/imageoverlay.js"></script>
 <body>
 
   <div class="top-gif">
@@ -50,7 +32,7 @@
         <div class="object-info">
           <h3>Description</h3>
           <p>The <strong>Pale Key</strong> is a rare and mysterious object that occasionally appears throughout various levels of the Backrooms.</p>
-          <p>When used, the Pale Key is inserted directly into the floor by the player, triggering an immediate noclip event that sends the user to either an <em>unidentified level</em> or a <em>random location</em> somewhere in the Backrooms.</p>
+          <p>When used, the Pale Key is inserted directly into the floor, triggering an immediate noclip event that sends the user to either an <em>unidentified level</em> or a <em>random location</em> somewhere in the Backrooms.</p>
 
           <p>Its behavior is unpredictable, but it has the unusual capability of transporting individuals to <strong>unique levels</strong> that are otherwise unreachable, such as <a href="../404.html">Level-363</a> and the <a href="../404.html">Pillar level.</a></p>
 
@@ -61,16 +43,16 @@
             <li>Motel Depot</li>
             <li>Possibly other levels (unconfirmed)</li>
           </ul>
-
+          
           <h3>Notes</h3>
           <ul>
             <li>Appearance rate: very low</li>
             <li>Once used, it disappears permanently</li>
             <li>Possibly can lead to new undetified levels</li>
-            <li>The destination cannot be chosen or predicted</li>
+            <li>The destination can be predicted depending on the place where it is used.</li>
           </ul>
-        </div>
-        <img src="../assets/images/pale_key.png" alt="Pale Key" class="object-image" />
+      <div class="image-column">
+        <img src="../assets/images/pale_key.png" alt="Pale Key" class="level-image"/>
       </div>
     </main>
 
