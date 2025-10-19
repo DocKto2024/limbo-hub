@@ -1,0 +1,12 @@
+/* CUSTOM FONT */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/LMBO.woff') format('woff2'),
+         url('../fonts/LMBO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom {
+    font-family: 'MyCustomFont', sans-serif;
+}
